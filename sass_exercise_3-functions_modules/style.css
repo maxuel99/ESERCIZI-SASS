@@ -1,0 +1,38 @@
+.d-flex {
+  display: flex;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid;
+  border-color: red;
+}
+
+.container h1 {
+  border-bottom: 1px solid;
+  border-color: blue;
+  color: green;
+}
+.container section article {
+  border: 1px solid;
+  border-color: green;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: red;
+}
+.container section .card-1, .container section .card-3 {
+  color: blue;
+}
+.container footer article {
+  border: 1px solid;
+  border-color: blue;
+  margin-top: 1rem;
+  padding: 1rem 3.2rem;
+  font-size: 24px;
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
