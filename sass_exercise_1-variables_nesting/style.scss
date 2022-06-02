@@ -1,0 +1,41 @@
+$color-green: green;
+$color-blue: blue;
+$color-red: red;
+$border-div: 1px solid $color-red;
+$border-article: 1px solid $color-green;
+$border-title: 1px solid $color-blue;
+$padding-1rem: 1rem;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: $border-div;
+    padding: $padding-1rem;
+
+    .title {
+        color: $color-green;
+        border-bottom: $border-title;
+    }
+    
+    section {
+        display: flex;
+    
+
+        article {
+            border: $border-article;
+            padding: $padding-1rem;
+        }
+    }
+
+    p {
+        color: $color-red;
+        text-align: center;
+    }
+
+    .first-article p,
+    .third-article p {
+    color: $color-blue;
+    }
+}
