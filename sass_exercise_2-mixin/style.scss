@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid red;
+    font-size: 1rem;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+@mixin article-card($color, $border-color, $font-size) {
+    color: $color;
+    border-color: $border-color;
+    font-size: $font-size;
+}
+
+section article {
+    border: 1px solid;
+    padding: 2rem 1rem;
+    text-align: center;
+    @include article-card(red, green, 1rem);
+}
+
+
+section .card-1,
+section .card-3 {
+    color: blue;
+}
+
+
+footer article {
+    border: 1px solid;
+    @include article-card(green, blue, 24px);
+    padding: 2rem 2.7rem;
+}
+
+.container h1 {
+    border-bottom: 1px solid blue;
+    color: green;
+    margin-top: 1rem;
+}
