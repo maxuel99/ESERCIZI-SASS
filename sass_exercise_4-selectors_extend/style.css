@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container h2, .container h1 {
+  color: green;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+  padding: 1rem;
+  margin: 1rem;
+  gap: 1rem;
+}
+.container h1 {
+  border-bottom: 1px solid blue;
+  margin: 1rem;
+}
+.container h2 {
+  border: 1px solid red;
+  padding: 1rem;
+}
+.container section article {
+  border: 1px solid green;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: red;
+}
+.container section .card-1, .container section .card-3 {
+  color: blue;
+}
+.container section .footer {
+  border: 1px solid blue;
+  font-size: 24px;
+  padding: 2rem 2.7rem;
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
