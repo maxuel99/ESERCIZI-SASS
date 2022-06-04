@@ -1,0 +1,108 @@
+@use 'functions';
+
+$color-green: green;
+$color-blue: blue;
+$color-red: red;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin font-colors($value: true) {
+    @if $value {
+        color: $color-red;
+      } @else {
+        color: $color-blue;
+      }
+    }
+
+.d-flex {
+    display: flex;
+}
+
+%h1 {
+    color: $color-green;
+}
+
+.container {
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid red;
+   padding: 1rem;
+   gap: 1rem;
+   margin: 1rem;
+
+   h1 {
+       @extend %h1;
+       border-bottom: 1px solid blue;
+       margin: 1rem 0;
+   }
+
+   h2 {
+       @extend %h1;
+       border: 1px solid red;
+       padding: 1rem; 
+   }
+
+
+   .fs {
+    gap: 1.54rem;
+    }
+
+    section {
+        & article {
+            border: 1px solid green;
+            text-align: center;
+            padding: 2rem 1rem;
+            @include font-colors($value: true);
+        }
+
+        & .card-1,
+        & .card-3 {
+            @include font-colors($value: false);
+        }
+    }
+
+
+    .footer {
+        & article {
+            border: 1px solid blue;
+            font-size: functions.rem(24rem);
+            padding: 2rem 2.7rem;
+            color: $color-green;
+        }
+    }
+}
+
+
+$sizes: 1rem, 2rem, 3rem;
+@each $size in $sizes {
+    .fs-#{$size} {
+        border: .2px solid red;
+        width: functions.rem(45rem);
+        height: functions.rem(45rem);
+        font-size: $size;
+    }
+}
+
+$first-color: white;
+$last-color: black;
+$amount: 5;
+@for $var from 1 to 20 {
+    @if $var == 10 {
+        .fs div:nth-of-type(#{$var}) {
+            background-color: blue;
+            color: red;
+            font-weight: bold;
+        }
+
+    } @else {
+        .fs div:nth-of-type(#{$var}) {
+            background-color: darken($first-color, $amount);
+            color: lighten($last-color, $amount);
+        }
+    }
+    $amount: $amount + 5;
+}

@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container h2, .container h1 {
+  color: green;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+  padding: 1rem;
+  gap: 1rem;
+  margin: 1rem;
+}
+.container h1 {
+  border-bottom: 1px solid blue;
+  margin: 1rem 0;
+}
+.container h2 {
+  border: 1px solid red;
+  padding: 1rem;
+}
+.container .fs {
+  gap: 1.54rem;
+}
+.container section article {
+  border: 1px solid green;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: red;
+}
+.container section .card-1, .container section .card-3 {
+  color: blue;
+}
+.container .footer article {
+  border: 1px solid blue;
+  font-size: 1.5rem;
+  padding: 2rem 2.7rem;
+  color: green;
+}
+
+.fs-1rem {
+  border: 0.2px solid red;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  font-size: 1rem;
+}
+
+.fs-2rem {
+  border: 0.2px solid red;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  font-size: 2rem;
+}
+
+.fs-3rem {
+  border: 0.2px solid red;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  font-size: 3rem;
+}
+
+.fs div:nth-of-type(1) {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+
+.fs div:nth-of-type(2) {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+
+.fs div:nth-of-type(3) {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+
+.fs div:nth-of-type(4) {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+.fs div:nth-of-type(5) {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+
+.fs div:nth-of-type(6) {
+  background-color: #b3b3b3;
+  color: #4d4d4d;
+}
+
+.fs div:nth-of-type(7) {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+
+.fs div:nth-of-type(8) {
+  background-color: #999999;
+  color: #666666;
+}
+
+.fs div:nth-of-type(9) {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+
+.fs div:nth-of-type(10) {
+  background-color: blue;
+  color: red;
+  font-weight: bold;
+}
+
+.fs div:nth-of-type(11) {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+
+.fs div:nth-of-type(12) {
+  background-color: #666666;
+  color: #999999;
+}
+
+.fs div:nth-of-type(13) {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+
+.fs div:nth-of-type(14) {
+  background-color: #4d4d4d;
+  color: #b3b3b3;
+}
+
+.fs div:nth-of-type(15) {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+
+.fs div:nth-of-type(16) {
+  background-color: #333333;
+  color: #cccccc;
+}
+
+.fs div:nth-of-type(17) {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+
+.fs div:nth-of-type(18) {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+
+.fs div:nth-of-type(19) {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+
+/*# sourceMappingURL=style.css.map */
