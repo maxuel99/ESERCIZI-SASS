@@ -1,0 +1,38 @@
+@use 'functions';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 200px;
+    padding: 3rem 1rem;
+    margin: 1rem auto;
+}
+
+.bounce {
+    width: 100px;
+    height: 100px;
+    background-color: functions.random-hex();
+    border-radius: 50%;
+    margin: auto;
+}
+
+.bg-random {
+    background-color: functions.random-hex();
+}
+
+@mixin bounce ($duration:null, $start: null, $distance: null) {
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY($start);} 
+        40% {transform: translateY($distance);} 
+        60% {transform: translateY(calc($distance / 2));} 
+    }
+}
+
+.bounce:hover {
+    @include bounce(1s, 0, -30px);
+    animation: bounce 1s;
+}
