@@ -32,7 +32,7 @@
     }
 }
 
-.bounce:hover {
+.bounce {
     @include bounce(1s, 0, -30px);
-    animation: bounce 1s;
+    animation: bounce 1s ease 0s infinite normal forwards;
 }
